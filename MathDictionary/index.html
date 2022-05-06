@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>수학 사전</title>
+        <style>
+            body {
+                background-color: #ffebcd;
+            }
+            span-1 {
+                color: #0000ff;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>명제와 집합</h1> 
+        <ul>
+            <fieldset>
+                <legend>명제와 집합</legend>
+                <strong>'p → q'</strong>가 참이면, <strong>'P ⊂ Q'</strong>가 성립한다.
+            </fieldset>
+        </ul>
+        <ul>
+            '옳은가, 옳지 않은가?'를 판정할 수 있는 문장 혹은 식을 <span-1 style="color: #0000ff;">명제</span-1>라고 한다. <br>
+            그리고 명제가 옳을 때는 <span-1>참</span-1>, 틀렸을 때는 <span-1>거짓</span-1>이라고 한다. <br>
+            또한 '<strong>x²=1</strong>'은 <strong>x=1</strong>일 때는 옳다고 할 수 있지만 <strong>x=2</strong>일 때는 옳지 않다. <br>
+            이와 같이 변수를 포함하는 식이나 문장에서 그 변수에 값을 대입했을 때, 참 또는 거짓이 결정되는 문장이나 식을 <span-1>조건</span-1>이라고 한다. <br>
+        </ul>
+        <ul>
+            집합이란 '모임'이라고 생각하는 사람이 있는데, 단순한 '모임'이라고만 해서는 의미가 너무 모호하다. <br>
+            수학에서는 '어떤 조건을 만족하는 것의 모임'을 <span-1>집합</span-1>이라고 부른다. <br>
+            가령 '양의 정수의 집합'이라고 말할 떄는 '양의 정수(<strong>1, 2, 3, 4, ···</strong>)'가 조건에 해당한다. <br>
+            이 집합의 이름을 <strong>A</strong>라고 하면 다음과 같이 표현한다. 
+            <ul>
+                <strong>A</strong> = {x│x＞0, x는 정수}
+            </ul> 
+            집합은 일반적으로 다음과 같이 표기한다.
+            <ul>
+                <strong>P</strong> = {x│<strong>p(</strong>x<strong>)</strong>}
+            </ul>
+            여기에서 {x│<strong>p(</strong>x<strong>)</strong>}는 'x'는 집합의 '구성원'으로, <span-1>원소</span-1>라고 한다. <br>
+            또 세로선 '│'의 오른쪽에 적힌 '<strong>p(</strong>x<strong>)</strong>'는 요소 x가 만족해야 할 '조건'을 뜻한다.
+        </ul>
+        <ul>
+            두 개의 조건 <strong>p</strong>, <strong>q</strong>를 이용헤 '<strong>p</strong>이면 <strong>q</strong>라는 명제를 보자. <br>
+            이때 <strong>p</strong>를 <span-1>가정</span-1>, <strong>q</strong>를 <span-1>결론</span-1>이라고 한다. <br>
+            가령 명제 '<strong>x=1</strong>이면 <strong>x²=1</strong>'은 '<strong>x=1</strong>'이 가정이고 '<strong>x²=1</strong>'이 결론이다. <br>
+            그리고 명제 '<strong>p</strong>이면 <strong>q</strong>'를 기호 →를 사용해 '<strong>p</strong> → <strong>q</strong>라고 적는다. <br>
+            예를 들어 명제 '<strong>x=1</strong>이면 <strong>x²=1</strong>'은 '<strong>x=1</strong> → <strong>x²=1</strong>'이라고 적는다.
+        </ul>
+        <ul>
+            '<strong>p</strong> → <strong>q</strong> 참이면 조건 <strong>p</strong>를 만족하는 것이 반드시 조건 <strong>q</strong>를 만족한다고 생각할 수 있다. <br>
+            따라서 조건 <strong>p</strong>를 만족하는 진리 집합 <strong>P</strong>는 조건 <strong>q</strong>를 만족하는 진리 집합 <strong>Q</strong>에 포함된다. <br>
+            그래서 '<strong>p</strong> → <strong>q</strong>'가 참일 때 "<strong>P</strong>는 <strong>Q</strong>의 부분 집합이다."라고 말하며 <span-1><strong>'P ⊂ Q'</strong></span-1>로 적는다. <br>
+            또한 '<strong>p</strong> → <strong>q</strong> 그리고 <strong>q</strong> → <strong>p</strong>(이것을 '<strong>p</strong> ↔ <strong>p</strong>라고 적는다.)'가 참일 때 '<strong>P</strong> ⊂ <strong>Q</strong> 그리고 '<strong>Q</strong> ⊂ <strong>P</strong>'가 되며, 이것을 '<strong>P</strong> = <strong>Q</strong>'라고 적는다.
+        </ul>
+
+        <h1>드모르간의 법칙</h1>
+        <ul>
+            <fieldset>
+                <legend>드모르간의 법칙</legend>
+                ~(<strong>p</strong> ∧ <strong>q</strong>) = ~<strong>p</strong> ∨ ~<strong>q</strong> <br>
+                ~(<strong>p</strong> ∨ <strong>q</strong>) = ~<strong>p</strong> ∧ <strong>q</strong>
+            </fieldset>
+        </ul>
+        <ul>
+            논리를 다룰 때 전용 기호를 사용하면 표현이 간결해져서 편리하다. <br>
+            여기에서는 조건을 소문자 <strong>p</strong>, <strong>q</strong> 등으로 나타내고 기호 ~, ∧, ∨를 다음 의미로 사용하기로 한다. <br><br>
+            <ul>
+                <ul>
+                    ~<strong>p</strong> : <strong>p</strong>가 아니다, <strong>p</strong> ∧ <strong>q</strong> : <strong>p</strong> 그리고 <strong>q</strong>, <strong>p</strong> ∨ <strong>q</strong> : <strong>p</strong> 또는 <strong>q</strong>
+                </ul>
+            </ul>
+        </ul>
+        <ul>
+            조건 <strong>p</strong>를 만족하는 집합을 <strong>P</strong>, 조건 <strong>q</strong>를 만족하는 집합을 <strong>Q</strong>라고 하자. <br>
+            이때 조건 <strong>p</strong> ∧ <strong>q</strong>를 만족하는(즉, <strong>p</strong> <strong>q</strong>의 양쪽을 모두 만족하는) 집합을 <strong>P</strong> ∩ <strong>Q</strong>라고 표기하고 <strong>P</strong>와 <strong>Q</strong>의 <span-1>교집합</span-1>(공통집합)이라고 한다. <br>
+            또 조건 <strong>p</strong> ∨ p를 만족하는(즉, <strong>p</strong>와 <strong>q</strong> 중에 적어도 한쪽을 만족하는) 집합을 <strong>P</strong> ∪ <strong>Q</strong>라고 표기하고 <strong>P</strong>와 <strong>Q</strong>의 <span-1>합집합</span-1>이라고 한다. <br>
+            한편 '~<strong>p</strong>를 만족한다'는 것은 'p를 만족하지 않는다'는 의미이므로, ~<strong>p</strong>를 만족하는 집합은 전체 집합에서 <strong>P</strong>를 제외한 집합이다. <br>
+            이 집합을 <strong>P</strong><sup>C</sup>라고 표기하고 <strong>P</strong>의 <span-1>여집합</span-1>이라고 한다.
+        </ul>
+        <ul>
+            드모르간의 법칙이 성립하는 근거는 결국 아래의 집합에 대해 다음의 ①, ②(집합에 대한 드모르간의 법칙)가 성립하기 때문이다.
+            <ul>
+                <ul>
+                    ① : (<strong>P</strong> ∩ <strong>Q</strong>)<sup>C</sup> = <strong>P</strong><sup>C</sup> ∪ <strong>Q</strong><sup>C</sup> <br>
+                    ② : (<strong>P</strong> ∪ <strong>Q</strong>)<sup>C</sup> = <strong>P</strong><sup>C</sup> ∩ <strong>Q</strong><sup>C</sup>
+                </ul>
+            </ul>
+        </ul>
+
+        <h1>전칭 명제, 특칭 명제와 그 부정</h1>
+        <ul>
+            <fieldset>
+                <legend>전칭 명제, 특칭 명제와 그 부정</legend>
+                '모든 <strong>x</strong>에 대해 <strong>p(</strong>x<strong>)</strong>'의 부정은 '어떤 <strong>x</strong>에 대해 ~<strong>p(</strong>x<strong>)</strong>'이다. <br>
+                '어떤 <strong>x</strong>에 대해 <strong>p(</strong>x<strong>)</strong>'의 부정은 '모든 <strong>x</strong>에 대해 ~<strong>p(</strong>x<strong>)</strong>'이다. <br>
+            </fieldset>
+        </ul>
+        <ul>
+            '모든 <strong>x</strong>에 대해 <strong>p(</strong>x<strong>)</strong>'와 같이 생각하는 대상 전체에 대해 성립함을 주장하는 명제를 <span-1>전칭 명제</span-1>라고 한다. <br>
+            또 '어떤 <strong>x</strong>에 대해 <strong>p(</strong>x<strong>)</strong>'와 같애 생각하는 대상 중 적어도 하나에 대해 성립하는 명제를 <span-1>특칭 명제</span-1>라고 한다.
+        </ul>
+        <ul>
+            논리는 일반적으로 어렵다. <br>
+            그중에서도 전칭 명제와 특칭 명제의 부정은 특히 틀리기 쉽다. <br>
+            "'모든 사람은 남자다.'의 부정은?"이라는 질문을 받으면 무심코 "모든 사람은 남자가 아니다."라는 틀린 대답을 하기 쉽다. <br>
+            '~이다.'를 '~가 아니다.'로 바꿨을 뿐이다. <br>
+            또 "'어떤 사람은 여자다.'의 부정은?"이라는 질문을 받으면 "어떤 사람은 여자가 아니다."라고 역시 틀린 대답을 하기 쉽다. <br>
+            이 논리를 확실히 판정하지 못하면 업무나 생확에도 지장을 줄 수 있으니 주의하기 바란다.
+        </ul>
+        <ul>
+            '모든 사람은 남자다.'라는 것을 예외 없이 전원이 남자라는 뜻이다. <br>
+            그러므로 이에 대한 부정은 '모두 남자가 아니다.'가 아니라, 단 한 명이라도 '예외가 있음'을 제시하면 되므로 '어떤 사람은 남자가 아니다.'이다. <br>
+            또 '어떤 사람은 여자다.'는 '여자인 사람이 적어도 한 명은 있다.'는 듯이므로 이에 대한 부정은 '여자인 사람은 한 명도 없다.', 즉 '모든 사람은 여자가 아니다.'이다.
+        </ul>
+
+        <h1>필요조건과 충분조건</h1>
+        <ul>
+            <fieldset>
+                <legend>필요조건과 충분조건</legend>
+                'p → q'가 참일 때 <br>
+                <ul>
+                    <ul>
+                        p는 q이기 위한 충분조건
+                        q는 p이기 위한 충분조건
+                    </ul>
+                </ul>
+                'q → p 그리고 q → p'가 참일 때 <br>
+                <ul>
+                    <ul>
+                        p는 q이기 위한 필요충분조건
+                        q는 p이기 위한 필요충분조건
+                    </ul>
+                </ul> 
+            </fieldset>
+        </ul>
+    </body>
+</html>
